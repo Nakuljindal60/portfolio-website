@@ -8,7 +8,7 @@ I'm Nakul Jindal, a Co-Organizer at GDG on Campus IIMT and a B.Tech Computer Sci
 - **Tools and Platforms**: Git, GitHub
 
 ### 🌟 Featured Project
-1. **Portfolio Website**: [Nakul's Portfolio](https://github.com/Nakuljindal60/portfolio-website)
+1. **Portfolio Website**: [Nakul's Portfolio](https://nakuljindal60.github.io/portfolio-website/)
    - A personal portfolio showcasing my skills, projects, and resume.
 
 ### 🎓 Education
@@ -24,7 +24,7 @@ I'm Nakul Jindal, a Co-Organizer at GDG on Campus IIMT and a B.Tech Computer Sci
 
 ### 📫 How to Reach Me
 - **LinkedIn**: [Nakul Jindal](https://www.linkedin.com/in/Nakul-jindal)
-- **Portfolio**: [Nakul's Portfolio](https://github.com/Nakuljindal60/portfolio-website)
+- **Portfolio**: [Nakul's Portfolio](https://nakuljindal60.github.io/portfolio-website/)
 
 ---
 
