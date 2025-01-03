@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakul Jindal</title>
+    <link rel="icon" href="title_icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            background-image: url(bg-image.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .nav {
+            background-color: white;
+            padding: 20px 0;
+        }
+
+        .nav-center ul {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: rgba(255, 255, 255, 0.75);
+            padding: 0.4rem;
+            top: 0px;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .nav-center ul li {
+            margin: 0 15px;
+        }
+
+        .nav-center ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+
+        .cover-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .center-img {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .center-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .portfolio-left {
+            flex: 1;
+        }
+
+        .portfolio-right {
+            flex: 2;
+        }
+
+        .portfolio .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .portfolio .container .box {
+            width: 100%;
+            margin: 0;
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid black;
+        }
+
+        .portfolio .container .box {
+            background-color: white;
+            position: relative;
+            width: 95%;
+            border: 2px solid black;
+            padding: 10px;
+            color: black;
+        }
+
+        .portfolio .container .box a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .parent-about {
+            background-color: antiquewhite;
+            background-image: url(images-1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .about {
+            padding: 50px;
+            background-color: white;
+            text-align: justify;
+            border: 4px solid blue;
+            margin: 5% auto;
+            max-width: 800px;
+            font-size: 25px;
+            color: black;
+        }
+
+        .about h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .about p {
+            text-align: justify;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 20px 0;
+        }
+
+        .socialIcon {
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+        }
+
+        .small {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-center ul li a {
+                font-size: 18px;
+            }
+
+            .center-img img {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                bottom: -100px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+            }
+            .cover-img{
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+
+            .portfolio {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .portfolio-left,
+            .portfolio-right {
+                flex: unset;
+                width: 100%;
+            }
+
+            .portfolio .container .box {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .about {
+                padding: 20px;
+                font-size: 18px;
+            }
+
+            .about h1 {
+                font-size: 30px;
+            }
+
+            .footer {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-center ul {
+                gap: 1rem;
+                padding: 1rem;
+                height: 5px;
+                align-items: center;
+            }
+
+            .portfolio img {
+                max-width: 90%;
+            }
+
+            .portfolio .container .box {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <nav class="nav-center">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="cover-img" id="Home">
+        <img src="cover.png" alt="cover">
+        <div class="center-img">
+            <img src="My-image-2.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <div class="portfolio" id="Portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-left"> <img src="My-image-3.jpg" alt="Portfolio Image">
+        </div>
+        <div class="portfolio-right">
+            <div class="container">
+                <div class="box">
+                    <a href="https://gdg.community.dev/gdg-on-campus-iimt-engineering-college-meerut-india/">
+                        <h1>Co-organizer at Google Developers Group on Campus: IIMT Engineering College</h1>
+                        <p>As a co-organizer, I have conducted and organized many workshops, Hands-on Labs with my Team.
+                        </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <h1>Web development</h1>
+                        <p>Developed many websites using HTML, CSS, JavaScript, Bootstrap, and PHP.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <h1>Problem solving using Python</h1>
+                        <p class="small">Developed many projects using Python.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <h1>MLSA</h1>
+                        <p>I am a member of the Microsoft Learn Student Club, where I have conducted many workshops and
+                            webinars.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <h1>My Resume Site</h1>
+                        <p>Developed this site using HTML, CSS, JavaScript, and PHP.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parent-about" id="About">
+        <div class="about">
+            <h1>About Myself</h1>
+            <p>Hello! I'm Nakul Jindal, a 20-year-old B.Tech Computer Science student with a keen interest in technology
+                and innovation. My journey in the tech world began with a fascination for how web technologies shape our
+                digital experience, leading me to sharpen my skills in web development. Alongside this, I'm diving into
+                the world of Python, eager to harness its versatile power for various applications.<br><br>
+                As a co-organizer for the Google Developers Group (GDG) on campus, I am committed to fostering a
+                collaborative and engaging environment for fellow tech enthusiasts. This role allows me to bridge the
+                gap between theoretical learning and real-world application, organizing workshops and events that bring
+                together students and industry professionals.<br><br>
+                My passion for technology is driven by a desire to create impactful solutions that address real-world
+                problems. Whether it's developing dynamic web applications or exploring new programming paradigms with
+                Python, I thrive on the challenge of continuous learning and innovation. Beyond academics, I enjoy
+                networking with like-minded individuals, exchanging ideas, and staying updated with the latest trends in
+                the tech landscape.<br><br>
+                Looking forward, my goal is to leverage my skills and knowledge to contribute meaningfully to the tech
+                community and beyond. I am excited about the endless possibilities that lie ahead and am dedicated to
+                making the most of every opportunity to grow and excel.</p>
+        </div>
+    </div>
+    <div class="footer" id="Contact">
+        <div>
+            <a href="mailto:nkjindal119@gmail.com">
+                <img src="icon1.png" alt="Email" class="socialIcon">
+            </a>
+            <a href="https://github.com/Nakuljindal60" target="_blank" rel="noopener noreferrer">
+                <img src="icon4.png" alt="GitHub" class="socialIcon">
+            </a>
+            <a href="https://www.instagram.com/nakul.jindal.10" target="_blank" rel="noopener noreferrer">
+                <img src="icon2.png" alt="Instagram" class="socialIcon">
+            </a>
+            <a href="https://www.linkedin.com/in/nakul-jindal" target="_blank" rel="noopener noreferrer">
+                <img src="icon3.png" alt="LinkedIn" class="socialIcon">
+            </a>
+        </div>
+        <p class="small" style="margin-top: 0px; color: white;">Created by Nakul Jindal</p>
+    </div>
+</body>
+
+</html>
